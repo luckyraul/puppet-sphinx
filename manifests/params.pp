@@ -2,6 +2,8 @@
 class sphinx::params {
     $ensure = present
     $package = 'sphinxsearch'
+    $service_ensure = 'running'
+    $service_status = true
     case $::operatingsystem {
         'Debian': {
           case $::lsbdistcodename {
