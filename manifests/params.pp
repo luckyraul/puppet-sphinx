@@ -1,5 +1,5 @@
-# == Class: php::params
-class php::params {
+# == Class: sphinx::params
+class sphinx::params {
     $ensure = present
     $package = 'sphinxsearch'
     case $::operatingsystem {
