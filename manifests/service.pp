@@ -9,7 +9,7 @@ class sphinx::service(
 ) inherits sphinx::params {
 
   service { 'sphinxsearch':
-    ensure => $ensure
+    ensure => $ensure,
     enable => $status,
   }
 }
